@@ -1,4 +1,7 @@
-FROM python:3
+FROM python:3.9
+
+RUN apt-get update && apt-get install -y unixodbc-dev
+
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV FLASK_APP run.py
