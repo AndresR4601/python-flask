@@ -2,9 +2,9 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import traceback
 import pyodbc
-from AzureAPI import setAzureKey
-from GithubAPI import setGitKey
-from OutlookAPI import setOutKey
+from AzureAPI import API_DEV_KEY
+from GithubAPI import API_GIT_KEY
+from OutlookAPI import API_OUT_KEY
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
