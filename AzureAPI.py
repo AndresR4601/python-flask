@@ -23,7 +23,6 @@ def setAzureKey(key):
     API_DEV_KEY = key
 """
 
-
 # Función para traer todos los IDs de los work items
 def idWI():
     username = 'Username'

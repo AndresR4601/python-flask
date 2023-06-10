@@ -13,6 +13,7 @@ jobs:
         uses: SpicyPizza/create-envfile@v1.3
         with:
           envkey_DEV_DATABASE_URL : ${{ secrets.KAFKA_URL }}
+          envkey_GITHUB_KEY : ${{ secrets.KEY }}
           file_name: .env
           fail_on_empty: false
       
