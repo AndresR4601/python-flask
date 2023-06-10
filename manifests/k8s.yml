@@ -13,7 +13,7 @@ spec:
         app: python-flask
     spec:
       containers:
-      - image: docker.io/adsoft/python-flask:{github.sha}
+      - image: docker.io/andresr4601/python-flask:{github.sha}
         name: kafka-consumer
 #        envFrom:
 #        - configMapRef:
