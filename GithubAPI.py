@@ -1,13 +1,12 @@
 from flask import Flask, jsonify, request
-#from dotenv import load_dotenv #original
+from dotenv import load_dotenv #original
 import requests, os
-#load_dotenv("tokens.env") #original
+load_dotenv("tokens.env") #original
 
 # Header content types
 CONTENT_TYPE = 'application/json'
 # Header access tokens
-#API_GIT_KEY = os.environ.get("API_GIT_KEY") #original
-API_GIT_KEY = "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"
+API_GIT_KEY = os.environ.get("API_GIT_KEY") #original
 
 #funcion prueba 
 """

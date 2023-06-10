@@ -1,9 +1,9 @@
 from flask import Flask, jsonify, request
-#from dotenv import load_dotenv #original
+from dotenv import load_dotenv #original
 import requests, base64, json, os
 
 app = Flask(__name__)
-#load_dotenv("tokens.env") #original
+load_dotenv("tokens.env") #original
 ORGANIZATION = 'EquipoAgua'
 PROJECT = 'Agua'
 
@@ -12,11 +12,9 @@ CONTENT_TYPE = 'application/json'
 CONTENT_TYPE2 = 'application/json-patch+json'
 
 # Header access tokens
-#API_DEV_KEY = os.environ.get("API_DEV_KEY") #original
+API_DEV_KEY = os.environ.get("API_DEV_KEY") #original
 
 #sub = "windowslive|f6a8eb57361df774" #borrar
-
-API_DEV_KEY = "eacbtd3uuw3fhxb6zjxf7xggm2ihapf7qiizb2nbii7s7ftxhiza"
 
 """
 #funcion prueba 
