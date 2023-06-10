@@ -1,6 +1,9 @@
 FROM python:3.9
 
 RUN apt-get update && apt-get install -y unixodbc-dev
+RUN sudo apt-get update
+RUN sudo apt-get install -y msodbcsql17
+
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
