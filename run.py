@@ -6,7 +6,7 @@ from GithubAPI import GithubRepos, GithubIssues, GithubPulls
 from OutlookAPI import OutlookWeekEvents, OutlookMonthEvents, OutlookScheduleMeeting, OutlookAllEvents, OutlookGroups, OutlookDelete, OutlookFindMeetingTime
 from AzureAPI import AzureCreateItem, AzureOneItem, AzureWorkItems
 #from CVAPI import getCV, getGPTtext, upload
-#from dbApi import obtener_usuarios, guardar_usuario, check_if_user_is_hr, guardar_tokens, obtener_tokens
+from dbAPI import obtener_usuarios, guardar_usuario, check_if_user_is_hr, guardar_tokens, obtener_tokens
 
 app = Flask(__name__, static_folder='dist', static_url_path='')
 CORS(app, resources={r"/*": {"origins": "*"}})
@@ -87,7 +87,6 @@ def getWI(id):
 def postCreateItem():
     return AzureCreateItem()
 
-"""
 
 @app.route('/api/DatabaseGET')
 def obtenerU():
@@ -108,4 +107,3 @@ def postoken():
 @app.route('/api/DatabaseGETTokens/<sub>')
 def obtokens(sub):
     return obtener_tokens(sub)
-"""
