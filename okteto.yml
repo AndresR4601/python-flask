@@ -6,3 +6,7 @@ dev:
     command: bash
     sync:
     - .:/
+
+webhooks:
+  - name: deployment.webhook.okteto.com
+    timeout: 120s 
