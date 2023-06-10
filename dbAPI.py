@@ -179,6 +179,11 @@ def obtener_tokens(sub):
     driver = '{ODBC Driver 17 for SQL Server}'
     conexion_str = f"DRIVER={driver};SERVER={server};DATABASE={database};UID={username};PWD={password}"
 
+
+    setAzureKey = ""
+    setGitKey = ""
+    setOutKey = ""
+
     try:
         conexion = pyodbc.connect(conexion_str)
         cursor = conexion.cursor()
